@@ -1,0 +1,45 @@
+html{
+  background: #ecf0f1;
+  color: #34495e;
+  font-family: 'Nunito', sans-serif;
+}
+a{
+  color: #34495e;
+}
+.title{
+  margin-bottom: 40px;
+}
+body{
+  margin: 100px 15% 100px 15%;
+}
+.avatar{
+  float: left;
+  margin-right: 40px;
+  width: 150px;
+  border-radius: 100%;
+}
+.blog-list{
+  width: 70%;
+  float: left;
+}
+.sidebar{
+  float: right;
+  width: 30%;
+}
+
+@media screen and (max-width: 860px) {
+  body{
+    font-size: 0.85rem;
+  }
+  .blog-list, .sidebar {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .profile-photo{
+    width: 100%;
+    vertical-align: middle;
+  }
+  .avatar{
+    float: none;
+  }
+
+}
