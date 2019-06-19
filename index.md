@@ -16,9 +16,12 @@ layout: default
 </div>
 <hr>
 
+
+<div class="content">
 <div class="blog-list" markdown="1">
 
 ## Blog
+
   <ul>
     {% for post in site.posts %}
       {% if post.category == 'blog' %}
@@ -32,6 +35,7 @@ layout: default
 
 <div class="sidebar" markdown="1">
 ## Buku
+
   <ul>
     {% for post in site.posts %}
       {% if post.category == 'buku' %}
@@ -41,4 +45,5 @@ layout: default
       {% endif %}
     {% endfor %}
   </ul>
+</div>
 </div>
