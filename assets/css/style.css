@@ -36,6 +36,7 @@ footer{
 }
 @media screen and (max-width: 860px) {
   body{
+    margin: 50px 15% 50px 15%;
     font-size: 0.85rem;
   }
   .blog-list, .sidebar {
