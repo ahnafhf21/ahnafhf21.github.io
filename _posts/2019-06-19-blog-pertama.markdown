@@ -1,10 +1,14 @@
 ---
 layout: default
-title:  "Blog Pertama"
-date:   2019-06-19 14:43:38 +0700
+title:  "Pertama"
+date:   2019-06-23 11:23:00 +0700
 category: blog
-tags: [web, jekyll]
+tags: [perkenalan]
 ---
-Sebuah novel sejarah yang ditulis oleh Habiburrahman El Shirazy atau yang biasa juga dikenal Kang Abik. Beliau adalah seorang novelis asal Indonesia yang menyelesaikan gelar sarjananya di Al-Azhar University Cairo. Banyak karya - karya beliau yang sangat *booming* di Indonesia, seperti 'Ayat - Ayat Cinta' dan 'Ketika Cinta Bertasbih'.
+Halo teman – teman, nama saya Ahnaf Hadi Fathulloh. Seorang pelajar yang bercita – cita ingin menjadi pengusaha. Tertarik dengan dunia IT sejak SD, mulai belajar pemrograman sejak kelas 2 SMP. Saat ini belajar di UIN Syarif Hidayatullah jurusan Sistem Informasi.     
 
-Di dalam buku ini Kang Abik menceritakan tentang biografi *Badiduzzaman* atau Keajaiban Zaman Said Nursi yang dibungkus dengan cerita yang sangat apik, tidak membosankan, dan penuh pelajaran. Kisah percintaan pun tidak luput dari novel ini. Banyak menggambarkan adab - adab yang harus dimiliki oleh seorang muslim atau muslimah yang di zaman sekarang ini sudah luntur terkikis oleh budaya barat.
+Blog ini akan menjadi wadah penampung isi pikiran saya dan juga akan saya isi dengan hal - hal lain yang insya Allah akan bermanfaat bagi teman – teman semua.
+
+Saat artikel ini dibuat, situs ini memiliki dua kategori, yaitu blog dan buku. Blog akan saya isi dengan tulisan – tulisan saya, dan buku akan saya isi dengan rekomendasi buku dan review buku yang sudah saya baca.
+
+Terima kasih sudah membaca artikel ini, saya meminta maaf jika nantinya ada artikel atau tulisan yang kurang berkenan bagi teman – teman atau bahkan menyinggung teman – teman, maka dari itu saya sangat menghargai kritik dan saran dari teman – teman.
