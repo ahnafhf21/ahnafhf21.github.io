@@ -11,7 +11,7 @@ layout: default
   </div>
   <div class="description" markdown="1">
 # Halo, saya Ahnaf Hadi Fathulloh.
-## Bukan seorang programmer, tapi suka belajar dan membuat sesuatu dengan pemrograman. Halaman ini adalah coretan - coretan personal saya.
+## Bukan seorang programmer, tapi suka belajar dan membuat sesuatu dengan pemrograman.
   </div>
 </div>
 <hr>
