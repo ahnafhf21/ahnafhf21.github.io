@@ -14,22 +14,22 @@
 
     <link rel="stylesheet" href="/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-    <meta property="og:url"
+    <meta property="url"
     {% if page.category %}
       content="{{site.url}}/{{page.url}}"
     {% else %}
       content="{{site.url}}"
     {% endif %}
     />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"
+    <meta property="type"          content="website" />
+    <meta property="title"
     {% if page.category %}
       content="{{page.title}}"
     {% else %}
       content="{{site.title}}"
     {% endif %}
     />
-    <meta property="og:description"
+    <meta property="description"
     {% if page.category %}
       content="{{page.excerpt}}"
     {% else %}
