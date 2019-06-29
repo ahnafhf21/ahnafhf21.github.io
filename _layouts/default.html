@@ -3,14 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
     {% if page.title  %}
-    <title>{{ page.title }}</title>
+      {{ page.title }}
     {% else %}
-    <title>Ahnaf Hadi Fathulloh</title>
+      Ahnaf Hadi Fathulloh
     {% endif %}
+    </title>
 
     <link rel="stylesheet" href="/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <meta property="og:url"
+    {% if page.category %}
+      content="{{site.url}}/{{page.url}}"
+    {% else %}
+      content="{{site.url}}"
+    {% endif %}
+    />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"
+    {% if page.category %}
+      content="{{page.title}}"
+    {% else %}
+      content="{{site.title}}"
+    {% endif %}
+    />
+    <meta property="og:description"
+    {% if page.category %}
+      content="{{page.excerpt}}"
+    {% else %}
+      content="Halo, saya Ahnaf Hadi Fathulloh. Bukan seorang programmer, tapi suka belajar dan membuat sesuatu dengan pemrograman. Halaman ini adalah tempat coret - coretan random saya."
+    {% endif %}
+    />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74386408-3"></script>
     <script>
@@ -41,5 +66,5 @@
       <center> <a href="https://facebook.com/ahnafzzz">Facebook</a> - <a href="https://instagram.com/ahnafhf21">Instagram</a> - <a href="https://twitter.com/ahnafhf21">Twitter</a> - <a href="https://www.linkedin.com/in/ahnafhf21">Linkedin</a> </center>
       <center>&copy; 2019 - Made with ❤ by Ahnaf Hadi Fathulloh</center>
     </footer>
-  </body>
+    </body>
 </html>
