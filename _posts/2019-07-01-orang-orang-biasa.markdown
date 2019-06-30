@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Orang - Orang Biasa"
-date:   2019-05-20 10:46:38 +0700
+date:   2019-07-01 01:14:38 +0700
 category: buku
 tags: [novel]
 ---
