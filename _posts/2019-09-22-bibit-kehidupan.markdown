@@ -6,11 +6,11 @@ category: blog
 tags: [islam, sajak, puisi]
 ---
 
-tanam dalam – dalam
-lalu biarkan ia mencari penghidupan
-kepada yang memberi kehidupan
-agar ia tumbuh dengan kokoh
-karena ia tau sumber mutlak kehidupan adalah Dia yang maha menghidupi
+  tanam dalam – dalam
+  lalu biarkan ia mencari penghidupan
+  kepada yang memberi kehidupan
+  agar ia tumbuh dengan kokoh
+  karena ia tau sumber mutlak kehidupan adalah Dia yang maha menghidupi
 
     dan biarkan akarnya mencari pijakkan
     kepada yang tidak mati
