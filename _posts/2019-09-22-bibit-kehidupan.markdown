@@ -5,7 +5,7 @@ date:   2019-09-22 10:46:38 +0700
 category: blog
 tags: [islam, sajak, puisi]
 ---
-test
+.
       tanam dalam – dalam
       lalu biarkan ia mencari penghidupan
       kepada yang memberi kehidupan
