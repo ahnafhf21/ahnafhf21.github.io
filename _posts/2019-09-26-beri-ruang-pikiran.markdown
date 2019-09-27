@@ -1,0 +1,14 @@
+---
+layout: default
+title:  "Beri Ruang Pikiran untuk Berpikir"
+date:   2019-09-27 11:23:00 +0700
+category: blog
+tags: [keresahan]
+---
+Akhir - akhir ini, secara sadar atau tidak sadar banyak sekali masalah yang hadir dan masuk ke dalam pikiran kita. Masalah - masalah itu membuat emosi kita naik dan turun. Masalah - masalah itu pula yang membuat kita mungkin menjadi tidak terkendali. Kita menjadi ingin selalu terlibat di yang bukan ranah kita dan bahkan secara tidak sadar kita sendiri yang membuat masalah menjadi lebih rumit. Sebagai manusia, bukan berarti kita harus diam di saat masalah - masalah menyerang dan mengobrak - abrik hidup kita. Manusiawi jika kita resah dan gelisah ketika banyak sekali masalah yang melanda. Tetapi, kita juga harus bisa berpikir jernih dalam mengelola masalah - masalah tersebut agar dapat terselesaikan bukan malah semakin merumit.
+
+Kalau boleh mengutip ceramahnya Pak Fahruddin Faiz, beliau pernah bilang, *'pikiran - pikiran yang terganggu oleh macem - macem tadi ya masuk, merasuk. Kalau yang masuk jelek - jelek ya efeknya di dirimu juga jelek. Maka, pinter - pinterlah apa yang harus kamu masukkan dan apa yang jangan masuk ke dalam dirimu karena itu menentukkan isi pikiranmu.'* Saya sangat setuju dengan beliau, sekarang ini kita bisa dengan sangat mudah mendapatkan segala informasi yang kita butuhkan, bahkan segala yang tidak kita butuhkan-pun bisa dengan mudah kita dapatkan. Banyak hal - hal yang tidak kita butuhkan ikut masuk ke pikiran kita, ikut membentuk diri kita, dan membelokkan pikiran kita sehingga membuat kita lalai dan lupa dengan tujuan kita.
+
+Terlalu banyak informasi yang tidak kita butuhkan yang masuk bisa membuat kita menjadi sibuk dengan hal yang sia – sia. Tidak semua informasi itu kita butuhkan dan perlu kita ketahui. Tidak semua informasi yang kita ketahui itu harus kita tanggapi. Kita perlu memberikan ruang kepada pikiran kita untuk berpikir jernih tentang itu. Tentunya akan sangat sulit jika sangat banyak informasi yang diterima oleh pikiran kita.
+
+Maka dari itu, pilah informasi mana yang bermanfaat untuk kita, dan mana yang tidak. Informasi yang mana yang harus kita tanggapi dan mana yang tidak. Memilah informasi bukan berarti apatis, tetapi jika semua yang tidak kita butuhkan masuk ke dalam pikiran kita, kita bisa dibuat lalai olehnya. Beri ruang kepada pikiran kita untuk berpikir. Pikiran kita butuh ruang untuk berpikir jernih, tanpa diganggu oleh hal – hal yang tidak berguna.
