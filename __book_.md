@@ -3,7 +3,7 @@ layout: default
 title: Buku
 permalink: /buku/
 ---
-
+<!--
   <ul>
     {% for post in site.posts %}
       {% if post.category == 'buku' %}
@@ -13,3 +13,4 @@ permalink: /buku/
       {% endif %}
     {% endfor %}
   </ul>
+-->

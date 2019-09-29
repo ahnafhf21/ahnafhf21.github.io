@@ -33,7 +33,7 @@ layout: default
   </ul>
 </div>
 
-<div class="sidebar" markdown="1">
+<!-- <div class="sidebar" markdown="1">
 ## Buku
 
   <ul>
@@ -45,5 +45,5 @@ layout: default
       {% endif %}
     {% endfor %}
   </ul>
-</div>
+</div> -->
 </div>
