@@ -2,7 +2,7 @@
 layout: default
 title:  "Bibit Kehidupan"
 date:   2019-09-22 10:46:38 +0700
-category: blog
+category: sajak
 tags: [islam, sajak, puisi]
 ---
 <i>tanam dalam – dalam<br>

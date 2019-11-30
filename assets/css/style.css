@@ -34,6 +34,9 @@ footer{
   float: left;
   width: 100%;
 }
+h2{
+  font-size: 26px;;
+}
 @media screen and (max-width: 860px) {
   body{
     margin: 50px 15% 50px 15%;
@@ -49,5 +52,7 @@ footer{
   .avatar{
     float: none;
   }
-
+  h2{
+    font-size: 20px;;
+  }
 }

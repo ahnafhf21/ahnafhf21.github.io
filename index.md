@@ -33,9 +33,18 @@ layout: default
   </ul>
 </div>
 
-<!-- <div class="sidebar" markdown="1">
+<div class="sidebar" markdown="1">
+## Sajak
+  <ul>
+    {% for post in site.posts %}
+      {% if post.category == 'sajak' %}
+      <li>
+        <h3 style="display:inline;"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 ## Buku
-
   <ul>
     {% for post in site.posts %}
       {% if post.category == 'buku' %}
@@ -45,5 +54,6 @@ layout: default
       {% endif %}
     {% endfor %}
   </ul>
-</div> -->
+
+</div>
 </div>
