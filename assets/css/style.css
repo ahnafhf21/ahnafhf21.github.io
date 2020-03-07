@@ -2,6 +2,7 @@ html{
   background: #ecf0f1;
   color: #34495e;
   font-family: 'Nunito', sans-serif;
+  font-size: 19px;
 }
 a{
   color: #34495e;
@@ -37,6 +38,12 @@ footer{
 h2{
   font-size: 26px;;
 }
+ul li a{
+  font-size: 20px;
+}
+ul li a:hover {
+  font-weight: 600;
+}
 @media screen and (max-width: 860px) {
   body{
     margin: 50px 15% 50px 15%;
@@ -54,5 +61,11 @@ h2{
   }
   h2{
     font-size: 20px;;
+  }
+  ul li a{
+    font-size: 16px;
+  }
+  ul li a:hover {
+    font-weight: 600;
   }
 }

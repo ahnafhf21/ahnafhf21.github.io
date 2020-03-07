@@ -26,11 +26,22 @@ layout: default
     {% for post in site.posts %}
       {% if post.category == 'blog' %}
       <li>
-        <h3 style="display:inline;"><a href="{{ post.url }}">{{ post.title }}</a></h3> - {{ post.date | date_to_long_string }}
+        <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_long_string }}
       </li>
       {% endif %}
     {% endfor %}
   </ul>
+
+## Saya juga pernah terlibat dalam beberapa project lho ..
+  <ul>
+      {% for post in site.posts %}
+        {% if post.category == 'project' %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_long_string }}
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
 </div>
 
 <div class="sidebar" markdown="1">
@@ -39,7 +50,7 @@ layout: default
     {% for post in site.posts %}
       {% if post.category == 'sajak' %}
       <li>
-        <h3 style="display:inline;"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
       {% endif %}
     {% endfor %}
@@ -49,7 +60,7 @@ layout: default
     {% for post in site.posts %}
       {% if post.category == 'buku' %}
       <li>
-        <h3 style="display:inline;"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
       {% endif %}
     {% endfor %}
