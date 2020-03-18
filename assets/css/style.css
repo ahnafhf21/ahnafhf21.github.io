@@ -44,10 +44,13 @@ ul li a{
 ul li a:hover {
   font-weight: 600;
 }
+time {
+  font-size: 16px;
+}
 @media screen and (max-width: 860px) {
   body{
     margin: 50px 15% 50px 15%;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
   .blog-list, .sidebar {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */

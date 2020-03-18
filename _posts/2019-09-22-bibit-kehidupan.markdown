@@ -15,3 +15,5 @@ dan biarkan akarnya mencari pijakkan<br>
 kepada yang tidak mati<br>
 agar ia tidak goyah<br>
 karena ia tak lagi sangsi dengan yang ia pijak<br></i>
+
+<time>Cijahe Baduy, 15 Juli 2019</time>
