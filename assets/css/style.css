@@ -49,7 +49,7 @@ time {
 }
 @media screen and (max-width: 860px) {
   body{
-    margin: 50px 15% 50px 15%;
+    margin: 50px 12% 50px 12%;
     font-size: 0.8rem;
   }
   .blog-list, .sidebar {
