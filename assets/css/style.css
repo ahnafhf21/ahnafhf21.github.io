@@ -50,7 +50,7 @@ time {
 @media screen and (max-width: 860px) {
   body{
     margin: 50px 15% 50px 15%;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .blog-list, .sidebar {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */

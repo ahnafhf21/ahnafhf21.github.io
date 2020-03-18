@@ -10,7 +10,7 @@ sebanyak orang yang bernama sama denganmu<br>
 sebanyak itu pula usahaku<br> 
 untuk tidak memanggilnya dengan namamu<br>
 sebab bagiku<br> itu bukan sekadar soal namamu<br>
-ada kenangan, kekecewaan, pelajaran masa lalu<br>
+ada kenangan, kekecewaan, dan pelajaran masa lalu<br>
 yang telah memupukku<br>
 hingga aku mampu<br>
 untuk bertahan tanpamu<br></i>
