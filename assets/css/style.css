@@ -47,6 +47,10 @@ ul li a:hover {
 time {
   font-size: 16px;
 }
+.love{
+  font-family: Segoe UI Emoji, Segoe UI Symbol,
+    Symbola, Quivira;
+}
 @media screen and (max-width: 860px) {
   body{
     margin: 50px 8% 50px 8%;
