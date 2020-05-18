@@ -24,7 +24,7 @@ Novel ini membawa pembaca berimajinasi di 4 negara, yaitu Turki, Nederland, Arab
 
 Namun, tidak jarang diperlukan fokus lebih bagi pembaca untuk mencerna banyak kosakata dan juga nama – nama baru yang mungkin belum familiar dengan pembaca. Selain itu, karena terdapat kesamaan panggilan dalam tokoh utamanya, yaitu Basah Nurkandam dan Basah Katib, pembaca juga harus teliti dalam membedakannya.
 
-Sang Pangeran dan Janissary Terakhir sangat direkomendasikan untuk yang tertarik dengan sejarah, namun ingin mencoba mendapatkannya dari sudut pandang fiksi.
+
 
 
 
