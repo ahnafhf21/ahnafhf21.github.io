@@ -8,7 +8,7 @@ tags: [blog, buku]
 - Judul Buku : Sang Pangeran dan Janissary Terakhir
 - Pengarang	: Salim A. Fillah
 - Penerbit : Pro-U Media
-- Tahun Terbit : 2019<
+- Tahun Terbit : 2019
 - Tebal Halaman : 631 halaman
 
 
