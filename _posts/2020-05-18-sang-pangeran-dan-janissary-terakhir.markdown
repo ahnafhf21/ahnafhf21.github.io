@@ -5,14 +5,12 @@ date:   2020-05-18 00:00:00 +0700
 category: buku
 tags: [blog, buku]
 ---
-<ul>
-    <li>Judul Buku		: Sang Pangeran dan Janissary Terakhir</li>
-    <li>Pengarang		: Salim A. Fillah</li>
-    <li>Penerbit		: Pro-U Media</li>
-    <li>Tahun Terbit	: 2019</li>
-    <li>Tebal Halaman 	: 631 halaman</li>
+- Judul Buku : Sang Pangeran dan Janissary Terakhir
+- Pengarang	: Salim A. Fillah
+- Penerbit : Pro-U Media
+- Tahun Terbit : 2019<
+- Tebal Halaman : 631 halaman
 
-</ul>
 
 Sang Pangeran dan Janissary Terakhir merupakan sebuah buku fiksi pertama yang ditulis oleh Salim A. Fillah dari lebih dari 12 buku yang pernah beliau tulis. Novel ini adalah buku pertama dari “Tetralogi Sang Pangeran” yang akan mengupas kisah dakwah dan perjuangan Islam di Nusantara. Dengan mengombinasikan perjalanan Nurkandam Pasha  beserta teman – teman Janissary-nya, buku ini menceritakan kisah, kasih, dan juga selisih yang terjadi dalam Perang Diponegoro.
 
