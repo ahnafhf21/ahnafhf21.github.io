@@ -1,0 +1,219 @@
+I"F<div class="profile">
+  <div class="profile-photo">
+    <img class="avatar" src="assets/images/foto_square.png" alt="Ahnaf Hadi Fathulloh" />  
+  </div>
+  <div class="description">
+    <h1 id="halo-saya-ahnaf-hadi-fathulloh">Halo, saya Ahnaf Hadi Fathulloh.</h1>
+    <h2 id="bukan-seorang-programmer-tapi-suka-belajar-dan-membuat-sesuatu-dengan-pemrograman-halaman-ini-adalah-ruang-bagi-saya-untuk-berekspresi">Bukan seorang programmer, tapi suka belajar dan membuat sesuatu dengan pemrograman. Halaman ini adalah ruang bagi saya untuk berekspresi.</h2>
+  </div>
+</div>
+<hr />
+
+<div class="content">
+<div class="blog-list">
+
+    <h2 id="blog">Blog</h2>
+
+    <ul>
+    
+      
+      <li>
+        <a href="/blog/sang-pangeran-dan-janissary-terakhir.html">Sang Pangeran dan Janissary Terakhir</a> - 18 May 2020
+      </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <li>
+        <a href="/blog/beri-ruang-pikiran.html">Beri Ruang Pikiran untuk Berpikir</a> - 27 September 2019
+      </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <li>
+        <a href="/blog/beli-buku-impor-gratis-biaya-pengiriman.html">Beli Buku Impor Gratis Biaya Pengiriman</a> - 29 June 2019
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        <a href="/blog/blog-pertama.html">Pertama</a> - 23 June 2019
+      </li>
+      
+    
+      
+    
+  </ul>
+
+    <h2 id="saya-juga-pernah-terlibat-dalam-beberapa-project-lho-">Saya juga pernah terlibat dalam beberapa project lho ..</h2>
+    <ul>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+        <li>
+          <a href="/project/kiprah-di-mta-server.html">Kiprah di Ranah MTA Server Indonesia</a> - 25 January 2020
+        </li>
+        
+      
+        
+        <li>
+          <a href="/project/terdampar-3d.html">Terdampar 3D</a> - 24 January 2020
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+
+<div class="sidebar">
+    <h2 id="sajak">Sajak</h2>
+    <ul>
+    
+      
+    
+      
+      <li>
+        <a href="/sajak/sosial-media.html">Sosial Media</a>
+      </li>
+      
+    
+      
+      <li>
+        <a href="/sajak/perjalanan.html">Perjalanan</a>
+      </li>
+      
+    
+      
+      <li>
+        <a href="/sajak/rumah-sejati.html">Rumah Sejati</a>
+      </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <li>
+        <a href="/sajak/aku-merasakannya-lagi.html">Aku Merasakannya, Lagi</a>
+      </li>
+      
+    
+      
+      <li>
+        <a href="/sajak/bibit-kehidupan.html">Bibit Kehidupan</a>
+      </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+    <!--## Buku
+  <ul>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <li>
+        <a href="/buku/aroma-karsa.html">Aroma Karsa</a>
+      </li>
+      
+    
+      
+      <li>
+        <a href="/buku/orang-orang-biasa.html">Orang - Orang Biasa</a>
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        <a href="/buku/ranah-3-warna.html">Ranah 3 Warna</a>
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        <a href="/buku/api-tauhid.html">Api Tauhid</a>
+      </li>
+      
+    
+  </ul>
+-->
+  </div>
+</div>
+:ET

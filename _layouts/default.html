@@ -62,6 +62,11 @@
           {{ content }}
         </section>
 
+        {% if page.category == 'blog' %}
+
+          Tags: <i>{{ page.tags | array_to_sentence_string }}</i><br>
+        {% endif %}
+
     <footer>
       <center><a href="https://instagram.com/ahnafhf21" target="_blank">Instagram</a> - <a href="https://facebook.com/ahnafzzz" target="_blank">Facebook</a> - <a href="https://github.com/ahnafhf21" target="_blank">Github</a> - <a href="https://twitter.com/ahnafhf21" target="_blank">Twitter</a> - <a href="https://www.linkedin.com/in/ahnafhf21" target="_blank">Linkedin</a> </center>
       <center>&copy; 2020 - Made with <span class="love">&#10084;</span> by Ahnaf Hadi Fathulloh</center>

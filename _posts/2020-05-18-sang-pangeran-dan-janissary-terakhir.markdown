@@ -2,7 +2,7 @@
 layout: default
 title:  "Sang Pangeran dan Janissary Terakhir"
 date:   2020-05-18 00:00:00 +0700
-category: buku
+category: blog
 tags: [blog, buku]
 ---
 - Judul Buku : Sang Pangeran dan Janissary Terakhir

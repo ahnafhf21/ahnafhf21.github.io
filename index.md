@@ -55,7 +55,7 @@ layout: default
       {% endif %}
     {% endfor %}
   </ul>
-## Buku
+<!--## Buku
   <ul>
     {% for post in site.posts %}
       {% if post.category == 'buku' %}
@@ -65,6 +65,6 @@ layout: default
       {% endif %}
     {% endfor %}
   </ul>
-
+-->
 </div>
 </div>

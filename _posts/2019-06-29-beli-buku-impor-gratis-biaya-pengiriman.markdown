@@ -3,7 +3,7 @@ layout: default
 title:  "Beli Buku Impor Gratis Biaya Pengiriman"
 date:   2019-06-29 21:45:00 +0700
 category: blog
-tags: [cerita, buku]
+tags: [cerita, pengalaman, buku]
 ---
 Bagi teman – teman yang ingin membeli buku impor secara online, banyak sekali pilihan online bookstore yang teman – teman bisa andalkan. Dari yang bertempat  di Indonesia atau yang di luar negeri. Di Indonesia sendiri ada periplus, booksbeyond, uni-books, dan masih banyak lagi. Sedangkan di luar negeri, sangat banyak online bookstore yang tidak bisa saya sebutkan satu persatu. Tetapi disini saya akan menceritakan pengalaman saya membeli buku di bookdepository.
 
