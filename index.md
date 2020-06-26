@@ -37,7 +37,7 @@ layout: default
       {% for post in site.posts %}
         {% if post.category == 'project' %}
         <li>
-          <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_long_string }}
+          <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
         {% endif %}
       {% endfor %}
