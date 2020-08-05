@@ -1,4 +1,4 @@
-I""<div class="profile">
+I"Ì<div class="profile">
   <div class="profile-photo">
     <img class="avatar" src="assets/images/foto_square.png" alt="Ahnaf Hadi Fathulloh" />  
   </div>
@@ -15,6 +15,12 @@
     <h2 id="blog">Blog</h2>
 
     <ul>
+    
+      
+      <li>
+        <a href="/blog/bandung-satu.html">Perjalanan di Bandung #1</a> - 03 August 2020
+      </li>
+      
     
       
       <li>
@@ -76,6 +82,8 @@
         
       
         
+      
+        
         <li>
           <a href="/project/kiprah-di-mta-server.html">Kiprah di Ranah MTA Server Indonesia</a>
         </li>
@@ -111,6 +119,8 @@
 <div class="sidebar">
     <h2 id="sajak">Sajak</h2>
     <ul>
+    
+      
     
       
     
@@ -165,6 +175,8 @@
   </ul>
     <!--## Buku
   <ul>
+    
+      
     
       
     
