@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Perjalanan di Bandung #1"
+title:  "Backpackeran ke Bandung #1"
 date:   2020-08-3 11:23:00 +0700
 category: blog
 tags: [cerita, perjalanan, bandung]
