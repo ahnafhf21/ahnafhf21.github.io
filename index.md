@@ -7,7 +7,7 @@ layout: default
 
 <div class="profile" markdown="1">
   <div class="profile-photo">
-    <img class="avatar" src="assets/images/foto_square.png" alt="Ahnaf Hadi Fathulloh" />  
+    <img class="avatar" src="{{ '/assets/images/foto_square.png' | relative_url }}" alt="Ahnaf Hadi Fathulloh" width="150" height="150" />
   </div>
   <div class="description" markdown="1">
 # Halo, saya Ahnaf Hadi Fathulloh.
@@ -22,37 +22,35 @@ layout: default
 
 ## Blog
 
+  {% comment %}Filter once instead of rescanning every post inside each loop.{% endcomment %}
+  {% assign blog_posts = site.posts | where: "category", "blog" %}
   <ul>
-    {% for post in site.posts %}
-      {% if post.category == 'blog' %}
+    {% for post in blog_posts %}
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_long_string }}
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> - <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
       </li>
-      {% endif %}
     {% endfor %}
   </ul>
 
 ## Saya juga pernah terlibat dalam beberapa project lho ..
+  {% assign project_posts = site.posts | where: "category", "project" %}
   <ul>
-      {% for post in site.posts %}
-        {% if post.category == 'project' %}
+      {% for post in project_posts %}
         <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
+          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </li>
-        {% endif %}
       {% endfor %}
     </ul>
 </div>
 
 <div class="sidebar" markdown="1">
 ## Sajak
+  {% assign poem_posts = site.posts | where: "category", "sajak" %}
   <ul>
-    {% for post in site.posts %}
-      {% if post.category == 'sajak' %}
+    {% for post in poem_posts %}
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
       </li>
-      {% endif %}
     {% endfor %}
   </ul>
 <!--## Buku

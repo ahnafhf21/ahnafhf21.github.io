@@ -1,78 +1,106 @@
-html{
+* {
+  box-sizing: border-box;
+}
+
+html {
   background: #ecf0f1;
   color: #34495e;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 19px;
 }
-a{
+
+body {
+  margin: 5rem auto;
+  max-width: 70rem;
+  padding: 0 2rem;
+}
+
+a {
   color: #34495e;
 }
-.title{
-  margin-bottom: 40px;
+
+a:hover,
+a:focus-visible {
+  font-weight: 600;
 }
-body{
-  margin: 100px 15% 100px 15%;
+
+.site-title {
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
-.avatar{
+
+.avatar {
+  border-radius: 50%;
   float: left;
-  margin-right: 40px;
+  height: 150px;
+  margin-right: 2rem;
+  object-fit: cover;
   width: 150px;
-  border-radius: 100%;
 }
-.content{
+
+.content {
+  /* Grid avoids float-clearing bugs and collapses cleanly on small screens. */
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 7fr) minmax(12rem, 3fr);
   width: 100%;
 }
 
-.blog-list{
-  width: 70%;
-  float: left;
+footer {
+  border-top: 1px solid #bdc3c7;
+  clear: both;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  text-align: center;
 }
-.sidebar{
-  float: right;
-  width: 30%;
+
+h2 {
+  font-size: 1.37rem;
 }
-footer{
-  float: left;
-  width: 100%;
+
+.post-link {
+  display: inline;
+  font-size: 1.05rem;
 }
-h2{
-  font-size: 26px;;
-}
-ul li a{
-  font-size: 20px;
-}
-ul li a:hover {
-  font-weight: 600;
-}
+
 time {
-  font-size: 16px;
+  font-size: 0.84rem;
 }
-.love{
-  font-family: Segoe UI Emoji, Segoe UI Symbol,
-    Symbola, Quivira;
+
+img,
+iframe {
+  max-width: 100%;
 }
+
+.video {
+  text-align: center;
+}
+
+.love {
+  font-family: "Segoe UI Emoji", "Segoe UI Symbol", Symbola, Quivira, sans-serif;
+}
+
 @media screen and (max-width: 860px) {
-  body{
-    margin: 50px 8% 50px 8%;
-    font-size: 0.85rem;
+  body {
+    margin: 2.5rem auto;
+    padding: 0 8%;
   }
-  .blog-list, .sidebar {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+
+  .content {
+    grid-template-columns: 1fr;
   }
-  .profile-photo{
+
+  .profile-photo {
     width: 100%;
-    vertical-align: middle;
   }
-  .avatar{
+
+  .avatar {
     float: none;
   }
-  h2{
-    font-size: 20px;;
-  }
-  ul li a{
-    font-size: 16px;
-  }
-  ul li a:hover {
-    font-weight: 600;
+
+  h2 {
+    font-size: 1.1rem;
   }
 }

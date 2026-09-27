@@ -1,75 +1,48 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>
-    {% if page.title  %}
-      {{ page.title }}
-    {% else %}
-      Ahnaf Hadi Fathulloh
-    {% endif %}
-    </title>
-
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-    <meta property="url"
-    {% if page.category %}
-      content="{{site.url}}/{{page.url}}"
-    {% else %}
-      content="{{site.url}}"
-    {% endif %}
-    />
-    <meta property="type"          content="website" />
-    <meta property="title"
-    {% if page.category %}
-      content="{{page.title}}"
-    {% else %}
-      content="{{site.title}}"
-    {% endif %}
-    />
-    <meta property="description"
-    {% if page.category %}
-      content="{{page.excerpt}}"
-    {% else %}
-      content="Halo, saya Ahnaf Hadi Fathulloh. Bukan seorang programmer, tapi suka belajar dan membuat sesuatu dengan pemrograman. Halaman ini adalah tempat coret - coretan random saya."
-    {% endif %}
-    />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74386408-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-74386408-3');
-    </script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {%- comment -%}Escape content-derived metadata and generate deployment-safe URLs.{%- endcomment -%}
+    {% assign page_title = page.title | default: site.title %}
+    {% assign page_description = page.description | default: page.excerpt | default: site.description %}
+    <title>{{ page_title | escape }}</title>
+    <meta name="description" content="{{ page_description | strip_html | normalize_whitespace | escape }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:type" content="{% if page.category %}article{% else %}website{% endif %}">
+    <meta property="og:title" content="{{ page_title | escape }}">
+    <meta property="og:description" content="{{ page_description | strip_html | normalize_whitespace | escape }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
-      <body>
-        <h1 class="title"><a href="{{ site.url }}">ahnafhf21</a></h1>
-        <h1>{{ page.title }}</h1>
+  <body>
+    <header>
+        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+        {% if page.title %}<h1>{{ page.title | escape }}</h1>{% endif %}
         {% if page.category == 'blog' or page.category == 'buku'  %}
 
-          Posted on <i>{{ page.date | date_to_long_string }}</i><br>
+          <p>Posted on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time></p>
         {% endif %}
 
         {% if page.category  %}
-          <a href="{{site.url}}">Home</a> - <a href="{{site.url}}/{{page.category}}"><u>{{ page.category }}</u></a>
+          <nav aria-label="Breadcrumb"><a href="{{ '/' | relative_url }}">Home</a> / <a href="{{ page.category | append: '/' | relative_url }}">{{ page.category | capitalize | escape }}</a></nav>
         {% endif %}
-        <section>
-          {{ content }}
-        </section>
+    </header>
+    <main>
+      {{ content }}
+    </main>
 
         {% if page.category == 'blog' %}
 
-          Tags: <i>{{ page.tags | array_to_sentence_string }}</i><br>
+          <p>Tags: <i>{{ page.tags | array_to_sentence_string | escape }}</i></p>
         {% endif %}
 
     <footer>
-      <center><a href="https://instagram.com/ahnafhf21" target="_blank">Instagram</a> - <a href="https://facebook.com/ahnafzzz" target="_blank">Facebook</a> - <a href="https://github.com/ahnafhf21" target="_blank">Github</a> - <a href="https://twitter.com/ahnafhf21" target="_blank">Twitter</a> - <a href="https://www.linkedin.com/in/ahnafhf21" target="_blank">Linkedin</a> </center>
-      <center>&copy; 2020 - Made with <span class="love">&#10084;</span> by Ahnaf Hadi Fathulloh</center>
+      <nav aria-label="Social media"><a href="https://instagram.com/ahnafhf21">Instagram</a> &middot; <a href="https://facebook.com/ahnafzzz">Facebook</a> &middot; <a href="https://github.com/ahnafhf21">GitHub</a> &middot; <a href="https://twitter.com/ahnafhf21">Twitter</a> &middot; <a href="https://www.linkedin.com/in/ahnafhf21">LinkedIn</a></nav>
+      <p>&copy; 2020&ndash;{{ site.time | date: '%Y' }} &middot; Made with <span class="love" aria-label="love">&#10084;</span> by Ahnaf Hadi Fathulloh</p>
     </footer>
-    </body>
+  </body>
 </html>

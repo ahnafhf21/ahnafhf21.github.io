@@ -5,12 +5,11 @@ permalink: /blog/
 ---
 
 
+  {% assign posts = site.posts | where: "category", "blog" %}
   <ul>
-    {% for post in site.posts %}
-      {% if post.category == 'blog' %}
+    {% for post in posts %}
       <li>
-        <h3 style="display:inline;"><a href="{{ post.url }}">{{ post.title }}</a></h3> - {{ post.date | date_to_long_string }}
+        <h2 class="post-link"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2> - <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
       </li>
-      {% endif %}
     {% endfor %}
   </ul>

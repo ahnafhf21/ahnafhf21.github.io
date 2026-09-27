@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Backpackeran ke Bandung #1"
-date:   2020-08-3 11:23:00 +0700
+date:   2020-08-03 11:23:00 +0700
 category: blog
 tags: [cerita, perjalanan, bandung]
 ---

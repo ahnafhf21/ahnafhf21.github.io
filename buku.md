@@ -4,12 +4,11 @@ title: Buku
 permalink: /buku/
 ---
 
+  {% assign posts = site.posts | where: "category", "buku" %}
   <ul>
-    {% for post in site.posts %}
-      {% if post.category == 'buku' %}
+    {% for post in posts %}
       <li>
-        <h3 style="display:inline;"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <h2 class="post-link"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
       </li>
-      {% endif %}
     {% endfor %}
   </ul>

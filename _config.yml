@@ -13,9 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: ahnafhf21 
+title: ahnafhf21
+description: Halo, saya Ahnaf Hadi Fathulloh. Halaman ini adalah ruang bagi saya untuk berekspresi.
 email: ahnafhadi@gmail.com
 url: "https://ahnafhf21.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
 twitter_username: ahnafhf21
 github_username:  ahnafhf21
 permalink: /:categories/:title:output_ext
