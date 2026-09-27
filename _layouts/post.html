@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<article>
+  <header class="mb-10 max-w-3xl{% if page.category == 'sajak' %} mx-auto text-center{% endif %}">
+    <p class="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-ember-600 dark:text-ember-400">{{ page.category | default: 'Tulisan' | escape }}</p>
+    <h1 class="font-serif text-4xl leading-tight tracking-tight text-ink-950 dark:text-white sm:text-5xl">{{ page.title | escape }}</h1>
+    {% if page.category == 'blog' or page.category == 'buku' %}
+      <p class="mt-4 text-sm text-ink-600 dark:text-paper-200/70"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%-d %B %Y' }}</time><span aria-hidden="true"> · </span>{{ page.content | number_of_words | divided_by: 200 | plus: 1 }} menit baca</p>
+    {% elsif page.date %}
+      <p class="mt-4 text-sm text-ink-600 dark:text-paper-200/70"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y' }}</time></p>
+    {% endif %}
+  </header>
+  <div class="{% if page.category == 'sajak' %}poem-content mx-auto max-w-2xl{% else %}reading-content{% endif %}">{{ content }}</div>
+  {% if page.tags.size > 0 %}
+    {% if page.category == 'blog' or page.category == 'project' %}
+      <div class="mt-10 flex max-w-reading flex-wrap gap-2 border-t border-paper-200 pt-6 dark:border-ink-800" aria-label="Tag konten">
+        {% for tag in page.tags %}<span class="rounded-full bg-paper-100 px-3 py-1 text-xs text-ink-700 dark:bg-ink-900 dark:text-paper-200">{{ tag | escape }}</span>{% endfor %}
+      </div>
+    {% endif %}
+  {% endif %}
+  {% if page.category == 'project' %}
+    <nav class="mt-10 flex flex-wrap gap-3" aria-label="Tautan project">
+      {% if page.demo_url %}<a class="rounded-full bg-ink-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-ember-600 dark:bg-paper-100 dark:text-ink-950" href="{{ page.demo_url | escape }}" target="_blank" rel="noopener noreferrer">Live demo ↗</a>{% endif %}
+      {% if page.github_url %}<a class="rounded-full border border-paper-200 px-5 py-3 text-sm font-medium text-ink-800 transition hover:border-ember-500 dark:border-ink-800 dark:text-paper-100" href="{{ page.github_url | escape }}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>{% endif %}
+    </nav>
+  {% endif %}
+</article>

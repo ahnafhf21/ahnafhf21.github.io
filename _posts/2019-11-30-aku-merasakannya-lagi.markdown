@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Aku Merasakannya, Lagi"
 date:   2019-09-22 10:46:38 +0700
 category: sajak

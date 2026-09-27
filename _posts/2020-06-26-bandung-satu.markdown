@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Backpackeran ke Bandung #1"
 date:   2020-08-03 11:23:00 +0700
 category: blog

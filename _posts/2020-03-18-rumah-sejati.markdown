@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Rumah Sejati"
 date:   2020-03-18 18:30:00 +0700
 category: sajak

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Perjalanan"
 date:   2020-03-23 10:30:00 +0700
 category: sajak

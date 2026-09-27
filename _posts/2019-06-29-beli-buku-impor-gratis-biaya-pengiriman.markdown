@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Beli Buku Impor Gratis Biaya Pengiriman"
 date:   2019-06-29 21:45:00 +0700
 category: blog
