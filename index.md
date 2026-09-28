@@ -7,7 +7,7 @@ description: Halo, saya Ahnaf Hadi Fathulloh. Catatan, karya, dan hal-hal yang s
   <div class="max-w-3xl">
     <p class="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-ember-600 dark:text-ember-400">Catatan personal & ruang berkarya</p>
     <h1 class="font-serif text-4xl leading-[1.12] tracking-tight text-ink-950 dark:text-white sm:text-6xl">Halo, saya Ahnaf Hadi Fathulloh.</h1>
-    <p class="mt-6 max-w-2xl text-lg leading-8 text-ink-700 dark:text-paper-200">Bukan seorang programmer, tapi suka belajar dan membuat sesuatu dengan pemrograman. Halaman ini adalah ruang bagi saya untuk berekspresi.</p>
+    <p class="mt-6 max-w-2xl text-lg leading-8 text-ink-700 dark:text-paper-200">Seorang <i>tech enthusiast</i> yang saat ini sedang mendalami dunia ServiceNow, DevOps Engineering, dan AI Engineering. Halaman ini adalah ruang bagi saya untuk belajar, berbagi, bereksperimen, dan menuangkan hal-hal yang menarik perhatian saya.</p>
     <div class="mt-8 flex flex-wrap gap-3">
       <a href="{{ '/project/' | relative_url }}" class="rounded-full bg-ink-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-ember-600 dark:bg-paper-100 dark:text-ink-950 dark:hover:bg-ember-400">Lihat project <span aria-hidden="true">↗</span></a>
       <a href="{{ '/about/' | relative_url }}" class="rounded-full border border-paper-200 px-5 py-3 text-sm font-medium text-ink-800 transition hover:border-ember-500 dark:border-ink-800 dark:text-paper-100">Tentang saya</a>
