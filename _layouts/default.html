@@ -1,48 +1,63 @@
 <!doctype html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {%- comment -%}Escape content-derived metadata and generate deployment-safe URLs.{%- endcomment -%}
     {% assign page_title = page.title | default: site.title %}
     {% assign page_description = page.description | default: page.excerpt | default: site.description %}
-    <title>{{ page_title | escape }}</title>
+    <title>{{ page_title | escape }}{% unless page_title == site.title %} — {{ site.title | escape }}{% endunless %}</title>
     <meta name="description" content="{{ page_description | strip_html | normalize_whitespace | escape }}">
     <link rel="canonical" href="{{ page.url | absolute_url }}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:type" content="{% if page.category %}article{% else %}website{% endif %}">
     <meta property="og:title" content="{{ page_title | escape }}">
     <meta property="og:description" content="{{ page_description | strip_html | normalize_whitespace | escape }}">
+    <script>
+      (() => {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | relative_url }}">
+    {% feed_meta %}
   </head>
-  <body>
-    <header>
-        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
-        {% if page.title %}<h1>{{ page.title | escape }}</h1>{% endif %}
-        {% if page.category == 'blog' or page.category == 'buku'  %}
-
-          <p>Posted on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time></p>
-        {% endif %}
-
-        {% if page.category  %}
-          <nav aria-label="Breadcrumb"><a href="{{ '/' | relative_url }}">Home</a> / <a href="{{ page.category | append: '/' | relative_url }}">{{ page.category | capitalize | escape }}</a></nav>
-        {% endif %}
+  <body class="min-h-screen{% if page.category == 'sajak' %} poem-page{% endif %}">
+    <a href="#main-content" class="sr-only z-50 rounded-full bg-ink-900 px-4 py-2 text-white focus:not-sr-only focus:fixed focus:left-4 focus:top-4">Lewati ke konten</a>
+    <header class="sticky top-0 z-40 border-b border-paper-200/80 bg-paper-50/90 backdrop-blur-xl dark:border-ink-800/80 dark:bg-ink-950/90">
+      <nav aria-label="Navigasi utama" class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4 sm:px-8">
+        <a href="{{ '/' | relative_url }}" class="shrink-0 text-sm font-semibold tracking-tight text-ink-950 transition hover:text-ember-600 dark:text-white dark:hover:text-ember-400">{{ site.title | escape }}<span class="text-ember-500">.</span></a>
+        <div class="flex items-center gap-1 sm:gap-2">
+          {% assign nav_items = 'Blog|/blog/,Project|/project/,Sajak|/sajak/,Tentang|/about/' | split: ',' %}
+          {% for item in nav_items %}
+            {% assign nav_parts = item | split: '|' %}
+            {% assign nav_url = nav_parts[1] %}
+            {% assign nav_label = nav_parts[0] %}
+            {% assign nav_active = false %}
+            {% if page.url == nav_url %}{% assign nav_active = true %}{% endif %}
+            {% if nav_label == 'Blog' and page.category == 'blog' %}{% assign nav_active = true %}{% endif %}
+            {% if nav_label == 'Project' and page.category == 'project' %}{% assign nav_active = true %}{% endif %}
+            {% if nav_label == 'Sajak' and page.category == 'sajak' %}{% assign nav_active = true %}{% endif %}
+            <a href="{{ nav_url | relative_url }}" class="rounded-full px-2 py-2 text-xs font-medium transition sm:px-3.5 sm:text-sm {% if nav_active %}bg-ink-900 text-white dark:bg-paper-100 dark:text-ink-950{% else %}text-ink-700 hover:bg-paper-100 hover:text-ink-950 dark:text-paper-200 dark:hover:bg-ink-900 dark:hover:text-white{% endif %} {% if nav_label == 'Tentang' %}hidden sm:inline-block{% endif %}" {% if nav_active %}aria-current="page"{% endif %}>{{ nav_label }}</a>
+          {% endfor %}
+          <button type="button" data-theme-toggle class="ml-1 grid h-9 w-9 place-items-center rounded-full border border-paper-200 text-lg text-ink-800 transition hover:border-ember-500 hover:text-ember-600 dark:border-ink-800 dark:text-paper-100 dark:hover:text-ember-400" aria-label="Switch to dark theme" aria-pressed="false">☾</button>
+        </div>
+      </nav>
     </header>
-    <main>
-      {{ content }}
-    </main>
-
-        {% if page.category == 'blog' %}
-
-          <p>Tags: <i>{{ page.tags | array_to_sentence_string | escape }}</i></p>
-        {% endif %}
-
-    <footer>
-      <nav aria-label="Social media"><a href="https://instagram.com/ahnafhf21">Instagram</a> &middot; <a href="https://facebook.com/ahnafzzz">Facebook</a> &middot; <a href="https://github.com/ahnafhf21">GitHub</a> &middot; <a href="https://twitter.com/ahnafhf21">Twitter</a> &middot; <a href="https://www.linkedin.com/in/ahnafhf21">LinkedIn</a></nav>
-      <p>&copy; 2020&ndash;{{ site.time | date: '%Y' }} &middot; Made with <span class="love" aria-label="love">&#10084;</span> by Ahnaf Hadi Fathulloh</p>
+    <main id="main-content" class="mx-auto min-h-[65vh] max-w-6xl px-5 py-12 sm:px-8 sm:py-16">{{ content }}</main>
+    <footer class="border-t border-paper-200 dark:border-ink-800">
+      <div class="mx-auto flex max-w-6xl flex-col gap-5 px-5 py-8 text-sm text-ink-600 dark:text-paper-200/70 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+        <p>© {{ site.time | date: '%Y' }} Ahnaf Hadi Fathulloh <span class="text-ember-500" aria-hidden="true">♥</span></p>
+        <nav aria-label="Tautan sosial" class="flex flex-wrap gap-x-5 gap-y-2">
+          <a class="transition hover:text-ember-600 dark:hover:text-ember-400" href="https://github.com/{{ site.github_username }}">GitHub</a>
+          <a class="transition hover:text-ember-600 dark:hover:text-ember-400" href="https://instagram.com/ahnafhf21">Instagram</a>
+          <a class="transition hover:text-ember-600 dark:hover:text-ember-400" href="https://linkedin.com/in/ahnafhf21">LinkedIn</a>
+          <a class="transition hover:text-ember-600 dark:hover:text-ember-400" href="{{ '/feed.xml' | relative_url }}">RSS</a>
+        </nav>
+      </div>
     </footer>
+    <script src="{{ '/assets/js/theme.js' | relative_url }}" defer></script>
   </body>
 </html>

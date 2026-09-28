@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Beri Ruang Pikiran untuk Berpikir"
 date:   2019-09-27 11:23:00 +0700
 category: blog

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Aroma Karsa"
 date:   2019-09-17 22:00:00 +0700
 category: buku

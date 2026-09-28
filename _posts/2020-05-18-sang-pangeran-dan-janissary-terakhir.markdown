@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Sang Pangeran dan Janissary Terakhir"
 date:   2020-05-18 00:00:00 +0700
 category: blog

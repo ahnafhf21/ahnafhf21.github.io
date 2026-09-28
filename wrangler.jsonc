@@ -1,0 +1,8 @@
+{
+  "name": "ahnafhf21-portfolio",
+  "compatibility_date": "2026-09-28",
+  "assets": {
+    "directory": "./_site",
+    "not_found_handling": "404-page"
+  }
+}
