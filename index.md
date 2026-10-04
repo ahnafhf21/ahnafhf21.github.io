@@ -31,16 +31,6 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-
-## Saya juga pernah terlibat dalam beberapa project lho ..
-  {% assign project_posts = site.posts | where: "category", "project" %}
-  <ul>
-      {% for post in project_posts %}
-        <li>
-          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </li>
-      {% endfor %}
-    </ul>
 </div>
 
 <div class="sidebar" markdown="1">

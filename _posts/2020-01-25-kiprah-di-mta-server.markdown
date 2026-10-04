@@ -3,6 +3,7 @@ layout: default
 title:  "Kiprah di Ranah MTA Server Indonesia"
 date:   2020-01-25 00:00:38 +0700
 category: project
+published: false
 tags: [project, game]
 ---
 

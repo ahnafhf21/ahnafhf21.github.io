@@ -2,6 +2,7 @@
 layout: default
 title: Project
 permalink: /project/
+published: false
 ---
 
 {% assign posts = site.posts | where: "category", "project" %}
