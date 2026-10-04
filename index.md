@@ -36,7 +36,7 @@ description: Halo, saya Ahnaf Hadi Fathulloh. Catatan, karya, dan hal-hal yang s
     </div>
   </section>
   <aside class="space-y-12">
-    <section aria-labelledby="selected-projects">
+    <!-- <section aria-labelledby="selected-projects">
       <div class="mb-5 flex items-end justify-between gap-3"><h2 id="selected-projects" class="font-serif text-2xl text-ink-950 dark:text-white">Project</h2><a class="text-xs font-medium text-ember-600 dark:text-ember-400" href="{{ '/project/' | relative_url }}">Semua ↗</a></div>
       {% for post in project_posts limit: 3 %}
         <a href="{{ post.url | relative_url }}" class="group mb-3 block rounded-2xl border border-paper-200 bg-white/60 p-5 transition hover:-translate-y-0.5 hover:border-ember-500/50 hover:shadow-soft dark:border-ink-800 dark:bg-ink-900/60">
@@ -45,7 +45,7 @@ description: Halo, saya Ahnaf Hadi Fathulloh. Catatan, karya, dan hal-hal yang s
           <span class="mt-3 inline-block text-xs text-ember-600 dark:text-ember-400">Jelajahi project ↗</span>
         </a>
       {% endfor %}
-    </section>
+    </section> -->
     <section aria-labelledby="poems">
       <div class="mb-4 flex items-end justify-between gap-3"><h2 id="poems" class="font-serif text-2xl text-ink-950 dark:text-white">Sajak</h2><a class="text-xs font-medium text-ember-600 dark:text-ember-400" href="{{ '/sajak/' | relative_url }}">Semua ↗</a></div>
       {% for post in poem_posts limit: 4 %}<a class="group block border-t border-paper-200 py-3 font-serif text-lg text-ink-800 transition hover:text-ember-600 dark:border-ink-800 dark:text-paper-100 dark:hover:text-ember-400" href="{{ post.url | relative_url }}">{{ post.title | escape }} <span class="float-right font-sans text-sm">↗</span></a>{% endfor %}
