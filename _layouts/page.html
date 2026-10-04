@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<header class="mb-10 max-w-3xl">
+  {% if page.description %}<p class="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-ember-600 dark:text-ember-400">{{ page.description | escape }}</p>{% endif %}
+  <h1 class="font-serif text-4xl leading-tight tracking-tight text-ink-950 dark:text-white sm:text-5xl">{{ page.title | escape }}</h1>
+</header>
+<div class="reading-content">{{ content }}</div>

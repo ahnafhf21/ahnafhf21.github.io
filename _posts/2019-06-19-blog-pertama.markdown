@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Pertama"
 date:   2019-06-23 11:23:00 +0700
 category: blog

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Api Tauhid"
 date:   2019-05-20 10:46:38 +0700
 category: buku

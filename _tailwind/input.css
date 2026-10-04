@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
+  body { @apply bg-paper-50 font-sans text-ink-900 antialiased transition-colors duration-300; }
+  .dark body { @apply bg-ink-950 text-paper-100; }
+  ::selection { @apply bg-ember-500/20 text-ink-950; }
+  :focus-visible { @apply outline-none ring-2 ring-ember-500 ring-offset-4 ring-offset-paper-50; }
+  .dark :focus-visible { @apply ring-offset-ink-950; }
+}
+
+@layer components {
+  .reading-content { @apply max-w-reading text-[1.0625rem] leading-8 text-ink-800 dark:text-paper-200; }
+  .reading-content > * + * { @apply mt-6; }
+  .reading-content h2, .reading-content h3 { @apply mt-12 font-semibold tracking-tight text-ink-950 dark:text-white; }
+  .reading-content h2 { @apply text-2xl; }
+  .reading-content h3 { @apply text-xl; }
+  .reading-content a { @apply text-ember-600 underline decoration-ember-500/40 underline-offset-4 transition hover:decoration-ember-500 dark:text-ember-400; }
+  .reading-content blockquote { @apply border-l-2 border-ember-500 pl-5 font-serif italic text-ink-800 dark:text-paper-200; }
+  .reading-content pre { @apply overflow-x-auto rounded-2xl border border-paper-200 bg-paper-100 p-5 text-sm leading-6 dark:border-ink-800 dark:bg-ink-900; }
+  .reading-content :not(pre) > code { @apply rounded bg-paper-100 px-1.5 py-0.5 font-mono text-[0.88em] text-ember-600 dark:bg-ink-800 dark:text-ember-400; }
+  .reading-content img { @apply h-auto rounded-2xl; }
+  .poem-content { @apply whitespace-pre-line text-center font-serif text-lg leading-[2.2] tracking-wide text-ink-800 dark:text-paper-200 sm:text-xl; }
+  .poem-page { background-image: radial-gradient(ellipse at 50% 12rem, rgb(200 117 74 / 0.08), transparent 34rem); }
+  .dark .poem-page { background-image: radial-gradient(ellipse at 50% 12rem, rgb(200 117 74 / 0.12), transparent 34rem); }
+  .highlight { @apply overflow-x-auto rounded-2xl border border-paper-200 bg-paper-100 p-5 text-sm leading-6 dark:border-ink-800 dark:bg-ink-900; }
+  .highlight .c, .highlight .c1, .highlight .cm { @apply text-ink-500 dark:text-paper-200/50; }
+  .highlight .k, .highlight .kd, .highlight .kn, .highlight .kp { @apply font-semibold text-ember-600 dark:text-ember-400; }
+  .highlight .s, .highlight .s1, .highlight .s2 { @apply text-green-700 dark:text-green-300; }
+  .highlight .nf, .highlight .na { @apply text-blue-700 dark:text-blue-300; }
+}

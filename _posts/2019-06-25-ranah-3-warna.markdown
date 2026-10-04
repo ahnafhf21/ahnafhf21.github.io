@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Ranah 3 Warna"
 date:   2019-06-25 22:50:00 +0700
 category: buku

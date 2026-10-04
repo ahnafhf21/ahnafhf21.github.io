@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Terdampar 3D"
 date:   2020-01-24 01:14:38 +0700
 category: project
